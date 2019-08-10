@@ -1,0 +1,53 @@
+<!--Basisdokument für Richtext-Editor. Wird über ein iFrame angezeigt-->
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<style>
+body{
+	margin: 0px;
+	padding: 0px;
+	overflow: hidden;
+	font-size: 16pt;	
+}
+.blatt{
+	margin: 0px;
+	position: absolute;
+	background-color: white;
+	height: 842pt;
+	width: 595pt;		
+}
+.blatt>div{
+	border: 0pt dotted lightblue;
+}
+.blatt .hauptbereich{	
+	font-family: icomoon, sans-serif;
+	position: absolute;
+	top: 0px;
+	margin: 69pt;
+	height: 702pt;
+	width: 455pt;
+	overflow: hidden;
+}
+.blatt .kopfbereich, .blatt .fussbereich{
+	overflow: hidden;
+	height: 68pt;
+	width: 100%;
+	position: absolute;
+}
+.blatt .fussbereich{
+	bottom: 0px;
+}
+</style>
+<title>Unbenanntes Dokument</title>
+</head>
+
+<body>
+  <div class="blatt">
+	<div class="kopfbereich"></div>
+        	<div class="hauptbereich" contenteditable="true">
+                  
+            </div>
+    <div class="fussbereich"></div>
+  </div>
+</body>
+</html>
